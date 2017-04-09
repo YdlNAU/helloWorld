@@ -1,10 +1,10 @@
 [ -e /picb/intprog/bin/picb-shell ] && . /picb/intprog/bin/picb-shell
 [ -e /picb/extprog/biopipeline/path.zsh ] && . /picb/extprog/biopipeline/path.zsh
 
-export wk=/picb/rnomics4
+export wk=/picb/rnomics4/yudalang
 
-export PATH=/home/yudalang/localperl/bin:$PATH
-#export PERLLIB=/home/yudalang/localperl/lib:$PERLLIB
+export PATH=/home/yudalang/localperl/bin:/picb/rnomics4/yudalang/softWare/mafft/bin:/picb/rnomics4/yudalang/softWare/tree/bin:$PATH
+
 
 
 if [ "$HOSTNAME" != "gate1.icb.ac.cn" ];
