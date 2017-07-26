@@ -2,12 +2,19 @@
 [ -e /picb/extprog/biopipeline/path.zsh ] && . /picb/extprog/biopipeline/path.zsh
 
 export wk=/picb/rnomics4/yudalang
+export db=/picb/rnomics1/database
+export GATK=/picb/rnomics4/yudalang/softWare/gatk/GenomeAnalysisTK.jar
+export eclip=/mnt/local-disk1/rnomics/eClip
+export iclip=/picb/rnomics4/yudalang/clip/iClip
+export hg38=/picb/rnomics1/database/Human/hg38
 
-export PATH=/home/yudalang/localperl/bin:/picb/rnomics4/yudalang/softWare/mafft/bin:/picb/rnomics4/yudalang/softWare/tree/bin:$PATH
 
+export PATH=/home/yudalang/localperl/bin:/home/yudalang/anaconda2/bin:/picb/rnomics4/yudalang/softWare/jdk1.8.0_131/bin:/picb/rnomics4/yudalang/softWare/mafft/bin:/picb/rnomics4/yudalang/softWare/tree/bin:/picb/rnomics4/yudalang/softWare/sratoolkit.2.8.2-1-centos_linux64/bin:/home/yudalang/perl6/bin:/home/yudalang/perl6/share/perl6/site/bin:$PATH
 
 
 if [ "$HOSTNAME" != "gate1.icb.ac.cn" ];
-then 
-	exec /picb/extprog/biopipeline/Linux-x86_64_exports/bin/zsh --login
+    then 
+    exec /picb/extprog/biopipeline/Linux-x86_64_exports/bin/zsh --login
 fi
+
+

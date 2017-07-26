@@ -93,10 +93,14 @@ setopt correctall
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 
+
 alias les='less -S'
 alias tas='tmux attach-session -t'
-alias perll='perl -w -Mstrict -MSmart::Comments'
+alias perll='perl -w -Mstrict -Mdiagnostics '
+alias sperl='perl -w -Mstrict -Mdiagnostics -MSmart::Comments'
 alias ll='ls -l'
+alias gatk='java -jar $GATK'
+alias cdo='cd ..;ls'
 
 
 
