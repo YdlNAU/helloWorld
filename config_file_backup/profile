@@ -1,15 +1,31 @@
 [ -e /picb/intprog/bin/picb-shell ] && . /picb/intprog/bin/picb-shell
 [ -e /picb/extprog/biopipeline/path.zsh ] && . /picb/extprog/biopipeline/path.zsh
 
-export wk=/picb/rnomics4/yudalang
+
+export wk4=/picb/rnomics4/yudalang
+export wk2=/picb/rnomics2/yudalang_soft
+export wk3=/picb/rnomics3/yudalang
+export wk1=/picb/rnomics1/yudalang
+export web=/picb/rnomics1/website/bw/yudalang
+
 export db=/picb/rnomics1/database
 export GATK=/picb/rnomics4/yudalang/softWare/gatk/GenomeAnalysisTK.jar
+export Queue=/picb/rnomics4/yudalang/softWare/Queue-3.8-0-ge9d806836/Queue.jar
 export eclip=/mnt/local-disk1/rnomics/eClip
 export iclip=/picb/rnomics4/yudalang/clip/iClip
 export hg38=/picb/rnomics1/database/Human/hg38
+export perl_temp=/home/yudalang/github/perl_progress_everyday/my_template
+export py_temp=~/github/python_material/template
+export Repbase=/picb/rnomics2/luozheng/Data/RepBase
+export STAR=/picb/rnomics2/yudalang_soft/STAR-STAR_2.4.0i/bin/Linux_x86_64
 
+# simple scripts path
+export PATH=~/github/python_material/scripts_bioinformatics:/picb/rnomics2/yudalang_soft/perl_scripts:$PATH 
+#soft ware path
+export PATH=/picb/rnomics2/yudalang_soft/perl_scripts/blat:/picb/rnomics4/yudalang/softWare/blast/ncbi-blast-2.6.0+/bin:/picb/rnomics4/yudalang/softWare/mafft/bin:/picb/rnomics4/yudalang/softWare/tree/bin:/picb/rnomics4/yudalang/softWare/sratoolkit.2.8.2-1-centos_linux64/bin:/picb/rnomics2/yudalang_soft/fastq_tools/bin:$PATH
+# interpeter path
+export PATH=/home/yudalang/anaconda2/bin:/home/yudalang/localperl/bin:/picb/rnomics4/yudalang/softWare/jdk1.8.0_131/bin:/home/yudalang/perl6/bin:/home/yudalang/perl6/share/perl6/site/bin:$PATH 
 
-export PATH=/home/yudalang/localperl/bin:/home/yudalang/anaconda2/bin:/picb/rnomics4/yudalang/softWare/jdk1.8.0_131/bin:/picb/rnomics4/yudalang/softWare/mafft/bin:/picb/rnomics4/yudalang/softWare/tree/bin:/picb/rnomics4/yudalang/softWare/sratoolkit.2.8.2-1-centos_linux64/bin:/home/yudalang/perl6/bin:/home/yudalang/perl6/share/perl6/site/bin:$PATH
 
 
 if [ "$HOSTNAME" != "gate1.icb.ac.cn" ];

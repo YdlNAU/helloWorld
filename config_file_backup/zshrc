@@ -51,7 +51,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git colored-man-pages z extract)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,10 +97,13 @@ zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 alias les='less -S'
 alias tas='tmux attach-session -t'
 alias perll='perl -w -Mstrict -Mdiagnostics '
+alias perls='perl -w -Mstrict '
 alias sperl='perl -w -Mstrict -Mdiagnostics -MSmart::Comments'
 alias ll='ls -l'
 alias gatk='java -jar $GATK'
 alias cdo='cd ..;ls'
-
+alias htop='htop -u yudalang'
+alias samt='samtools-1.2'
+alias py='python'
 
 
